@@ -1,0 +1,11 @@
+services:
+
+  adapter_pabx:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: adapter_pabx:dev
+    container_name: pbx_announcement_server
+    network_mode: host
+    command: ros2 run adapter_pabx announcement_server --ros-args -p config_path:=/home/workspace/src/adapter_pabx/config/accounts.json -p console_level:=0
