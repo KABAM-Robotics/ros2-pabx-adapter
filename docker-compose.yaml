@@ -8,4 +8,6 @@ services:
     image: adapter_pabx:dev
     container_name: pbx_announcement_server
     network_mode: host
+    volumes:
+      - ./accounts.json:/home/workspace/src/adapter_pabx/config/accounts.json
     command: ros2 run adapter_pabx announcement_server --ros-args -p config_path:=/home/workspace/src/adapter_pabx/config/accounts.json -p console_level:=0
