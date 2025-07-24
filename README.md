@@ -78,5 +78,5 @@ string call_status
 
 ## Maintainers
 
-- cardboardcode
-- ibrahiminfinite
+- [cardboardcode](https://github.com/cardboardcode)
+- [ibrahiminfinite](https://github.com/ibrahiminfinite)
